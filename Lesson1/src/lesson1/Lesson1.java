@@ -16,26 +16,14 @@ public class Lesson1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+//
+//        String numbers[] = {"407-799-2253"
+//                ,"321-565-8878","753-665-1254"
+//                ,"407-225-5679","531-665-1235"};
+        String phNum = "407-799-2253";
 
-        String numbers[] = {"407-799-2253"
-                ,"321-565-8878","753-665-1254"
-                ,"407-225-5679","531-665-1235"};
-        String phNum = "407-799-2253'";
         
-
-        
-        
-        for (int i = 0; i < numbers.length; i++) {
-            
-            if (numbers[i].matches(".*[407].*")) {
-                System.out.println(numbers[i]);
-            } 
-            
-        }
-        
-        
-        
-        
+        if (phNum.matches("/4\\w{0,2}.*/g")) 
+            {System.out.println("hey");}
     }
-    
 }
