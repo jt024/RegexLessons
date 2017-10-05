@@ -22,8 +22,7 @@ public class Lesson1 {
 //                ,"407-225-5679","531-665-1235"};
         String phNum = "407-799-2253";
 
-        
-        if (phNum.matches("/4\\w{0,2}.*/g")) 
-            {System.out.println("hey");}
+        System.out.println(phNum.matches("1?(1|-|\\+|.)?(\\()?[1-9]{1}[0-9]{2}(\\)|-|.)[0-9]{3}(-|.)[0-9]{4}"));
+
     }
 }
